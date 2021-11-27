@@ -6,8 +6,5 @@ watermark
 celluloid
 cycler
 seaborn
-Python version
-IPython version
-seaborn
 ipywidgets
 voila
