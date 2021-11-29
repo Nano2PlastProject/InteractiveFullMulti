@@ -19,7 +19,7 @@ def RC_estimation_function(processList,CombList,Clist,MP_prop,compartments_prop,
     RC_df=pd.concat([RC_df,extraRow])
     
     if numberRS <= 10:
-        print("Less than 10 RS")
+        #print("Less than 10 RS")
     #if len(Clist) <= 10*len(riverComp)*len(MPforms)*len(sizeBin):
         for spc in Clist:
            
@@ -68,7 +68,7 @@ def RC_estimation_function(processList,CombList,Clist,MP_prop,compartments_prop,
             RC_df.loc["density_kg_m3", spc[2:6]]= particles_dict[aggState].density_kg_m3
     
     elif numberRS <= 100:
-        print("10 or more RS but less than 100")
+        #print("10 or more RS but less than 100")
         for spc in Clist:
             if spc in Clist[0:10*len(riverComp)*len(MPforms)*len(sizeBin)]:
                 riverSection = spc[2]
@@ -123,7 +123,7 @@ def RC_estimation_function(processList,CombList,Clist,MP_prop,compartments_prop,
             RC_df.loc["density_kg_m3", spc[2:]]= particles_dict[aggState].density_kg_m3
             
     elif numberRS <= 1000:
-        print("100 or more RS but less than 1000")
+        #print("100 or more RS but less than 1000")
         for spc in Clist:
             if spc in Clist[0:10*len(riverComp)*len(MPforms)*len(sizeBin)]:
                 riverSection = spc[2]
@@ -217,5 +217,6 @@ def RC_estimation_function(processList,CombList,Clist,MP_prop,compartments_prop,
                 RC_df_templim.loc["breakup",[x]] = 0.000556/10
         
         RC_df=RC_df_templim
-
+   
+    print("Process rate constants estimated")
     return RC_df
