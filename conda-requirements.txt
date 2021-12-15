@@ -2,6 +2,7 @@ name: fullmulti
 channels:
   - conda-forge
 dependencies:
+  - python=3.10.0
   - pandas
   - numpy
   - matplotlib
