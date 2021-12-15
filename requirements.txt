@@ -7,4 +7,6 @@ celluloid
 cycler
 seaborn
 ipywidgets
+ipykernel
 voila
+jupyter_server
