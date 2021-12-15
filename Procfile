@@ -1,1 +1,1 @@
-web: python test.py
+web: voila --no-browser --port=$PORT test.ipynb

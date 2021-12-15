@@ -1,0 +1,19 @@
+name: fullmulti
+channels:
+  - conda-forge
+dependencies:
+  - pandas
+  - numpy
+  - matplotlib
+  - scipy
+  - watermark
+  - seaborn
+  - ipywidgets
+  - ipykernel
+  - voila
+  - jupyter_server
+  - tqdm
+  - pip
+  - pip:
+    - celluloid
+    - cycler
