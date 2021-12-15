@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser test.ipynb
+web: jupyter notebook --port $PORT --no-browser test.ipynb
