@@ -7,5 +7,5 @@ celluloid
 cycler
 seaborn
 ipywidgets
-voila==0.2.16
+voila
 tqdm
